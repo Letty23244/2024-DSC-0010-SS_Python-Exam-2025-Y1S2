@@ -64,7 +64,7 @@ def createProgram():
 
 
        # Update the programs
-@programs.route('/edit/<int:id>', methods =['PUT', 'PATCH'])
+@programs.route('/edit/<int:id>', methods =['PUT'])
 def updateprograms(id):
 
     try:

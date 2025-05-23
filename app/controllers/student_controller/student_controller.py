@@ -117,7 +117,7 @@ def getStudentById(id):
         }),HTTP_500_INTERNAL_SERVER_ERROR
     
 # Update the student 
-@students.route('/edit/<int:id>', methods =['PUT', 'PATCH'])
+@students.route('/edit/<int:id>', methods =['PUT'])
 def updateStudent(id):
 
     try:
