@@ -1,5 +1,4 @@
 from flask import Blueprint, request, jsonify
-
 from app.status_codes import HTTP_200_OK, HTTP_201_CREATED, HTTP_202_ACCEPTED, HTTP_400_BAD_REQUEST, HTTP_409_CONFLICT ,HTTP_401_UNAUTHORIZED, HTTP_404_NOT_FOUND, HTTP_403_FORBIDDEN, HTTP_500_INTERNAL_SERVER_ERROR
 from app.models.course import Course
 from app.extensions import db
@@ -7,7 +6,7 @@ from app.extensions import db
 # course Blueprint
 courses = Blueprint('courses',__name__, url_prefix='/api/v1/courses')
 
-#Creating a student
+#Creating a courses
 @courses.route('/create', methods =['POST'])
 def createCourse():
     
